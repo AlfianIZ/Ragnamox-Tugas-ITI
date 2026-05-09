@@ -55,7 +55,8 @@ af-packet:
      cluster-type: cluster_flow
      defrag: yes
 ```
-Note: untuk nama interface, ketik `ip addr` pada ubuntu server, cari baris `inet IP_UBUNTU_SERVER/24` pada baris tersebut bagian paling belakang adalah nama interface contoh:
+Note: untuk nama interface, ketik `ip addr` pada ubuntu server, cari baris `inet IP_UBUNTU_SERVER/24` pada baris tersebut bagian paling belakang adalah nama interface contoh: <img width="952" height="311" alt="image" src="https://github.com/user-attachments/assets/cdc6158f-f9eb-410c-8771-94cc36a43ecc" />
+
 
 4\. memperbarui ruleset suricata, ketik: 
 ```bash
