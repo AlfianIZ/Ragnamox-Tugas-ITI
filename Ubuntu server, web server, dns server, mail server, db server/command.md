@@ -12,7 +12,7 @@ TUGAS PROXMOX ITI
 
 &#x20;  - akses penuh firewall untuk nginx : sudo ufw allow 'Nginx full'
 
-&#x20;  - pengujian awal via browser: di laptop/pc/hp yang satu jaringan ketik http://ipubuntuserver contoh:http://192.168.1.101 http://
+&#x20;  - pengujian awal via browser: di laptop/pc/hp yang satu jaringan ketik http://(IP Ubuntu Server) contoh:http://192.168.1.101
 
 
 
