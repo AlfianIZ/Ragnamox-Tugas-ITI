@@ -20,13 +20,14 @@ suricata -V
 ```
 jika berhasil maka akan muncul versi suricata.
 
-2\. Identifikasi interface jaringan
+### 2. Identifikasi interface jaringan
 
 &#x20;  - ketik: 
 ```bash
 ip addr
 ```
-&#x20;  - cari nama interface yang memegang IP, misal ens18, contoh: 
+&#x20;  - cari nama interface yang memegang IP, misal ens18, contoh: <img width="952" height="311" alt="image" src="https://github.com/user-attachments/assets/b4f70026-defb-420d-8607-d0920be50801" />
+
 
 
 
