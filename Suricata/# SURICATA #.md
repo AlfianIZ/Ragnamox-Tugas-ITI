@@ -58,12 +58,12 @@ af-packet:
 Note: untuk nama interface, ketik `ip addr` pada ubuntu server, cari baris `inet IP_UBUNTU_SERVER/24` pada baris tersebut bagian paling belakang adalah nama interface contoh: <img width="952" height="311" alt="image" src="https://github.com/user-attachments/assets/cdc6158f-f9eb-410c-8771-94cc36a43ecc" />
 
 
-4\. memperbarui ruleset suricata, ketik: 
+### 4. memperbarui ruleset suricata, ketik: 
 ```bash
 sudo suricata-update
 ```
 
-5\. Menjalankan pengujian
+### 5. Menjalankan pengujian
 
 - cek validasi konfigurasi, ketik: 
 ```bash
@@ -86,7 +86,7 @@ sudo tail -f /var/log/suricata/fast.log
 ```
 
 
-6\. Membuat custom rule untuk mendeteksi ping
+### 6. Contoh membuat custom rule untuk mendeteksi ping
 
 - buka file rule local, ketik: 
 ```bash
