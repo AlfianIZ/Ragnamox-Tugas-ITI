@@ -325,4 +325,4 @@ ini adalah tampilan dashboard setelah ditambahkan panel. jika mau menambahkan pa
 
 -----
 <img width="1920" height="965" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/af210a66-38f4-4fe7-b46c-82e514568d42" />
-contohnya pada gambar tersebut saya menambahkan query: sum by (event_type) (count_over_time({job="suricata"} | json [1m])) untuk menampilkan jumlah setiap event. disamping kanan ada pilihan tampilan diagram yang mau dipakai.
+contohnya pada gambar tersebut saya menambahkan query: sum by (event_type) (count_over_time({job="suricata"} | json [1m])) untuk menampilkan jumlah setiap event. disamping kanan ada pilihan tampilan diagram yang ingin dipakai.
