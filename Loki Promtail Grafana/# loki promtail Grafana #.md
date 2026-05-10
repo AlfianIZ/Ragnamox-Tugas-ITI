@@ -25,7 +25,13 @@ curl -s https://api.github.com/repos/grafana/loki/releases/latest | grep browser
 unzip loki-linux-amd64.zip
 
 sudo mv loki-linux-amd64 /usr/local/bin/loki
-
+```
+pindah ke direktori root dengan mengetik:
+```bash
+cd
+```
+lalu, ketik:
+```bash
 sudo chmod +x /usr/local/bin/loki
 ```
 
