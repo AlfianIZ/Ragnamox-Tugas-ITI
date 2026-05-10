@@ -274,3 +274,55 @@ untuk username dan password, masukkan saja admin admin lalu log in.
 setelah itu akan disuruh update password, disini bebas mau skip atau diisi.
 
 -----
+<img width="1920" height="960" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/2c14b213-ad33-47fd-89c4-4eca78bc3d8e" />
+setelah itu langusung masuk ke connection -> data source.
+
+-----
+<img width="1920" height="965" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/66e9bcaa-10b2-492c-ac73-f9c6aedc0613" />
+tambahkan data source, pilih loki.
+
+-----
+<img width="1920" height="960" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/58a635c6-6170-42d6-b752-b092352c7fb6" />
+set url "http://localhost:3100"
+
+-----
+<img width="1920" height="962" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/196b8048-a332-445a-b7ab-91ceb4c3c3ef" />
+scroll ke bawah klik save.
+
+-----
+<img width="1920" height="960" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/50cc0493-3b27-4a3e-8b62-26a0e7baf67b" />
+pergi ke eksplor -> pilih loki.
+
+-----
+<img width="1920" height="962" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/69629c61-698f-45c8-854d-a7c877e5798d" />
+ketik query: {job="suricata"} lalu klik run query pada tombol warna biru pojok kanan atas, jika muncul diagram batang dan logs maka log suricata sudah masuk.
+
+-----
+<img width="1920" height="965" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/f95e52f9-4e8f-4c2a-b798-1598997eb79a" />
+lanjut konfigurasi dashboard dengan masuk ke menu dashboard -> new dashboard
+
+-----
+<img width="1920" height="961" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/d7240d60-0a0f-4215-bb97-f14910eff450" />
+disini bisa menambahkan panel untuk membuat diagram sesuai kebutuhan
+
+-----
+
+
+<img width="1920" height="979" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/9a57398e-b03e-48d4-a39b-9d25b590ab16" />
+contohnya disini menambahkan panel, klik configure
+
+-----
+<img width="1920" height="960" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/f7edb075-ff23-4953-a9c8-3da21f77603d" />
+pada menu ini pilih loki sebagai data source
+
+-----
+<img width="1920" height="960" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/00d2b3de-1a3f-4f8c-9006-0fdb43fd2862" />
+sebagai contoh saja, pada gambar ini menggunakan query: {job="suricata"} untuk menampilkan semua log suricata. jika sudah klik save lalu kembali ke tampilan dashboard.
+
+-----
+<img width="1920" height="963" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/e680ac07-aae2-43ec-95ae-d48f8569c935" />
+ini adalah tampilan dashboard setelah ditambahkan panel. jika mau menambahkan panel lebih banyak untuk menampilkan berbagai diagram, lakukan langkah-langkah mulai dari menambahkan panel sampai query dan menambahkan diagram.
+
+-----
+<img width="1920" height="965" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/af210a66-38f4-4fe7-b46c-82e514568d42" />
+contohnya pada gambar tersebut saya menambahkan query: sum by (event_type) (count_over_time({job="suricata"} | json [1m])) untuk menampilkan jumlah setiap event. disamping kanan ada pilihan tampilan diagram yang mau dipakai.
