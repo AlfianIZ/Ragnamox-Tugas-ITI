@@ -76,7 +76,38 @@ limits_config:
 ```
 
 
-### 4. cek status loki
+### 4. membuat file service loki
+&#x20;  - ketik:
+```bash
+sudo nano /etc/systemd/system/loki.service
+```
+&#x20;  - lalu isi dengan:
+```bash
+[Unit]
+Description=Loki log aggregation system
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/loki -config.file=/etc/loki/loki-config.yaml
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+&#x20;  - muat ulang konfigurasi systemd, ketik:
+```bash
+sudo systemctl daemon-reload
+```
+&#x20;  - atur agar loki otomatis aktif saat ubuntu server dihidupkan, ketik:
+```bash
+sudo systemctl enable loki
+```
+&#x20;  - jalankan loki, ketik:
+```bash
+sudo systemctl start loki
+```
+&#x20;  - cek status loki:
 ```bash
 sudo systemctl status loki
 ```
