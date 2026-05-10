@@ -261,7 +261,16 @@ sudo ufw allow 3000/tcp
 sudo ufw reload
 ```
 
-### 5. Buka Grafana di browser
+### 5. Buka Grafana di browser dan Konfigurasi
 ```
 http://IP_UBUNTU_SERVER:3000
 ```
+Tampilan awal:
+<img width="1919" height="957" alt="Screenshot 2026-05-10 094932" src="https://github.com/user-attachments/assets/87f613ae-3a56-46bb-8b43-c063428c1bab" />
+untuk username dan password, masukkan saja admin admin lalu log in.
+
+-----
+<img width="1918" height="954" alt="Screenshot 2026-05-10 095000" src="https://github.com/user-attachments/assets/8d10b5a1-8648-49c6-b680-535e4c24318d" />
+setelah itu akan disuruh update password, disini bebas mau skip atau diisi.
+
+-----
