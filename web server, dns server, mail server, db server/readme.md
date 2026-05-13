@@ -148,10 +148,6 @@ nslookup namadomain
    ```
    ipconfig /flushdns
    ```
-   - buka notepad sebagai administrator -> file -> open -> dik C -> Windows -> System32 -> drivers -> etc -> ubah Type file menjadi All Files -> buka file yang bernama host, lalu edit file hosts, letakkan baris ini dibawah sendiri, lalu save: 
-   ```
-   [IP_UBUNTU_SERVER]    namadomainkamu
-   [IP_UBUNTU_SERVER]    www.namadomainkamu
    ```
    - buka lagi browser dan ketik nama domain (contoh: http://alfi.lab).
    
@@ -166,41 +162,13 @@ sudo apt install postfix mailutils -y
 ```
 &#x20;  - lalu ditengah proses akan muncul layar ungu, pada General type of mail configuration pilih Internet Site (untuk memilihnya gunakan tombol panah dan tekan tab untuk mengarahkan ke tombol ok), lalu enter. selanjutnya pada System mail name, masukkan nama domain kamu (contoh: alfi.lab), lalu tab, enter.
 
-&#x20;  - Konfigurasi Postfix:
-1. edit file konfigurasi: 
-```bash
-sudo nano /etc/postfix/main.cf
-```
+&#x20;  - Test Postfix:
 
-2. lalu cari baris myhostname, ubah menjadi: 
-```bash
-myhostname = mail.namaDomain (mail.alfi.lab)
-```
-
-3. cari baris mydestination, ubah menjadi: 
-```bash
-mydestination = $myhostname, nama domain (contoh: alfi.lab), lacalhost.local domain, localhost
-```
-
-4. tambahkan pada baris paling bawah: 
-```bash
-home_mailbox = Maildir/
-```
- 
-5. OPSIONAL, tambahkan subnet pada bagian mynetworks: 
-```
-mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128, subnet (contoh:192.168.1.0/24)
-```
-
-6. simpan konfigurasinya lalu restart postfix: 
-```bash
-sudo systemctl restart postfix
-```
-7. tes kirim email ke root
+1. tes kirim email ke root
 ```
 echo "Setup Infrastructure Selesai" | mail -s "Final Test" root
 ```
-8. baca email (cek inbox)
+2. baca email (cek inbox)
 ```
 mail
 ```
