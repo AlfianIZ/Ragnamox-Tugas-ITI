@@ -37,7 +37,7 @@ sudo apt install mysql-server -y
 ```
 &#x20;  - verifikasi: 
 ```bash
-sudo systemctl status mysql-server
+sudo systemctl status mysql
 ```
 **Pastikan ada tulisan active (running) berwarna hijau**
 **Jika tidak hijau, jalankan : `sudo systemctl start mysql-server`**
