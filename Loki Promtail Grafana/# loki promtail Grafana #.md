@@ -20,7 +20,7 @@ cd /tmp
 
 &#x20;  - lalu jalankan command berikut satu persatu:
 ```bash
-curl -s https://api.github.com/repos/grafana/loki/releases/latest | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4 | wget -qi -
+wget -4 -c https://github.com/grafana/loki/releases/latest/download/loki-linux-amd64.zip
 
 unzip loki-linux-amd64.zip
 
