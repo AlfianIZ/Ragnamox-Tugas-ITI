@@ -162,7 +162,7 @@ nslookup namadomain
 
 &#x20;  - instalasi : 
 ```bash
-sudo apt install postfix -y
+sudo apt install postfix mailutils -y
 ```
 &#x20;  - lalu ditengah proses akan muncul layar ungu, pada General type of mail configuration pilih Internet Site (untuk memilihnya gunakan tombol panah dan tekan tab untuk mengarahkan ke tombol ok), lalu enter. selanjutnya pada System mail name, masukkan nama domain kamu (contoh: alfi.lab), lalu tab, enter.
 
